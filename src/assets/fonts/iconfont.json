@@ -1,0 +1,16 @@
+{
+  "id": "1566690",
+  "name": "我的旅游项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "609192",
+      "name": "箭头",
+      "font_class": "jiantouarrowhead7",
+      "unicode": "e6bc",
+      "unicode_decimal": 59068
+    }
+  ]
+}

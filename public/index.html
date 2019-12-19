@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="theme-color" content="#000000" />
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1566690_fhb3dqui7xr.css">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <!--
@@ -19,13 +20,14 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Cass</title>
   </head>
 
   <body>
     <noscript> You need to enable JavaScript to run this app. </noscript>
 
     <div id="root"></div>
+    <div id="container" style="display: none;"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -37,4 +39,17 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=TL5nQ3lFDKsuAYKj4eWfZ6YQfarnO89o"></script> -->
+  <script>
+    function initialize() {  
+      console.log(BMap)
+      window.BMap = BMap;
+    }
+    function loadScript() {  
+      var script = document.createElement("script");  
+      script.src = "http://api.map.baidu.com/api?v=3.0&ak=rKshyKYwh2uTo98B5KjIDT9KNPDVgtf2&callback=initialize";
+      document.body.appendChild(script);  
+    }
+    window.onload = loadScript;  
+  </script>
 </html>

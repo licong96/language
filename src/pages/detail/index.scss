@@ -1,0 +1,22 @@
+.detail {
+    animation: pageX .3s both;
+    .back {
+        display: inline-block;
+        margin: 15px;
+        transform: rotate(180deg);
+    }
+    .main {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@keyframes pageX {
+    0% {
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
