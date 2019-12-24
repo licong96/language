@@ -1,16 +1,22 @@
 import React from 'react';
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import './App.css';
-import 'rsuite/dist/styles/rsuite-default.css';
 import Home from './pages/home';
+import DetailAudio from './pages/detailAudio';
+import DetailImage from './pages/detailImage';
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path='/home' component={Home} />
-      </Switch>
+      <Route exact path='/' component={Home} />
+      <Route exact path='/detailAudio' component={DetailAudio} />
+      <Route exact path='/detailImage' component={DetailImage} />
     </Router>
+    
   );
 }
 
