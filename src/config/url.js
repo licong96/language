@@ -1,4 +1,4 @@
 export default {
-  imageUrl: 'http://47.97.205.255/english',
+  imageUrl: 'http://lc.594sj.cn/licong/english',
   audioUrl: 'http://dict.youdao.com/dictvoice'
 }
